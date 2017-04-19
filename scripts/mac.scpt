@@ -5,7 +5,7 @@ set windowTitle to ""
 tell application "System Events"
     set frontApp to first application process whose frontmost is true
     set frontAppName to name of frontApp
-    set windowTitle to "no window"
+    set windowTitle to ""
     tell process frontAppName
         if exists (1st window whose value of attribute "AXMain" is true) then
             tell (1st window whose value of attribute "AXMain" is true)
